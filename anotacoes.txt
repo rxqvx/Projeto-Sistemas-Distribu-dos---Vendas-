@@ -1,0 +1,34 @@
+* CASO DE USO REALIZAR COMPRAS
+
+- IDENTIFICAR OBJETOS E ATORES ENVOLVIDOS
+ATORES - CLIENTE
+
+SISTEMA DE VENDAS
+
+- DESCRIÇÃO DETALHADA DO CASO DE USO (Fluxo principal)
+1. Cliente entra no sistema inserindo o nome e seleciona o tipo cliente(informaNomeETipo())
+2. O Sistema abre tela de produtos disponíveis (consultaProdutos())
+3. Cliente clicka pra adicionar o produto ao carrinho (adicionaProduto(produto))
+4. Cliente clicka em seguir para pagamento (seguirParaPagamento())
+5. Sistema verifica o estoque (consultaEstoque(produto))
+6. Se o sistema tiver os produtos em estoque, o sistema mostra a tela de pagamento (mostrarTelaPagamento()), se não mostra mensagem de erro (mostrarErro())
+7. Cliente clicka em pagar (pagar())
+8. Sistema confirma (devolvendo feedback) que o pedido foi realizado com sucesso (msgSucesso())
+
+
+Pra criação do diagrama de sequência eu adiciono todos os atores
+
+
+* CASO DE USO VISUALIZAR EXTRATO DE VENDA
+
+- IDENTIFICAR OBJETOS E ATORES ENVOLVIDOS
+ATORES - PROPRIETARIO (DO PRODUTO PORRA)
+
+SISTEMA DE VENDAS
+
+- DESCRIÇÃO DETALHADA DO CASO DE USO (Fluxo principal)
+1. O proprietário insere seu nome e seleciona o tipo proprietario para entrar no sistema (entrar())
+2. O proprietário clicka no botão visualizar extrato (visualizarExtrato())
+3. O Sistema mostra a lista de pedidos realizados (mostrarLista())
+
+
